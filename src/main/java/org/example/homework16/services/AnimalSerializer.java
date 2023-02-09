@@ -11,8 +11,8 @@ import java.util.List;
 public class AnimalSerializer {
 
     private final JsonMapper jsonMapper = new JsonMapper();
-    private final String tmpdir = System.getProperty("java.io.tmpdir");
-    private final String path = new File(tmpdir + "animals.json").getAbsolutePath();
+
+    private final String path = "src/main/resources/animals.json";
 
     public void serialize(List<Animal> animals) {
         try {
