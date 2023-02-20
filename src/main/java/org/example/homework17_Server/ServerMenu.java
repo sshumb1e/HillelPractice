@@ -49,11 +49,11 @@ public class ServerMenu extends Thread {
         {
             try {
 
-                dataOutputStream.writeUTF("Please make your choose [Date | Time | File | Exit]");
+                dataOutputStream.writeUTF("Please choose [Date | Time | File | Exit]");
 
                 response = dataInputStream.readUTF();
 
-                serverSender.broadcast(this, "New client -"+ this.getClient().getName() + " connected!!!" );
+                serverSender.broadcast(this, "Client -"+ this.getClient().getName() + " connected!!!" );
 
                 if(response.equals("Exit"))
                 {
