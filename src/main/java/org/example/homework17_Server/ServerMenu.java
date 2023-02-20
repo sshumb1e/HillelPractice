@@ -99,7 +99,5 @@ public class ServerMenu extends Thread {
         }
     }
 
-/*    public void send(String msg) throws IOException {
-        dataOutputStream.writeUTF(msg);
-    }*/
+
 }

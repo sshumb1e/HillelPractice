@@ -64,30 +64,6 @@ public class Server {
                 .collect(Collectors.toList()));
     }
 
-  /*  public void broadcast(ServerMenu sesOne, String msg) throws IOException {
-
-        for (ServerMenu session : serverController) {
-            if (session!=sesOne) {
-                session.send(msg);
-            }
-        }
-    }
-
-    public void receiveFile(String fileName, DataInputStream inputStream) throws IOException {
-
-        int bytes = 0;
-
-        Path path = Paths.get(fileName);
-        FileOutputStream fileOutputStream = new FileOutputStream(path.getFileName().toString());
-        long size = inputStream.readLong();
-        byte[] buffer = new byte[4*1024];
-        while (size > 0 && (bytes = inputStream.read(buffer, 0, (int)Math.min(buffer.length, size))) != -1) {
-            fileOutputStream.write(buffer,0,bytes);
-            size -= bytes;
-        }
-        fileOutputStream.close();
-    }
-*/
 
 
 
